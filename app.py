@@ -5,12 +5,12 @@ from flask_mysqldb import MySQL
 app = Flask(__name__,template_folder='templates')
 
 
-redis = Redis(host="redis", db=0, socket_timeout=5, charset="utf-8", decode_responses=True)
+redis = Redis(host="redis.hx8pzn.ng.0001.use2.cache.amazonaws.com", db=0, socket_timeout=5, charset="utf-8", decode_responses=True)
 
 #code for connection
 app.config['MYSQL_USER'] = 'myuser'
 app.config['MYSQL_PASSWORD'] = 'mypassword'
-app.config['MYSQL_HOST'] = 'localhost'
+app.config['MYSQL_HOST'] = 'mydb.cjlapcgqhru5.us-east-2.rds.amazonaws.com'
 app.config['MYSQL_DB'] = 'mydb'
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 
