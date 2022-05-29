@@ -1,0 +1,38 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: flask-redis:1.0
+    environment:
+      - FLASK_ENV=development
+    ports:
+      - 8083:8083
+    deploy:
+      replicas: 4
+      restart_policy:
+        max_attempts: 3
+        condition: on-failure
+      update_config:
+        parallelism: 3
+        delay: 10s
+    depends_on:
+      - mysql
+      - redis
+    volumes:
+       - /tmp:/run/mysqld
+  redis:
+    #image: redis:4.0.11-alpine
+    image: redis:6.2.7-alpine
+  
+  mysql:
+    image: mysql:8.0
+    environment:
+      - MYSQL_DATABASE=mydb
+      - MYSQL_USER=myuser
+      - MYSQL_PASSWORD=mypassword
+      - MYSQL_ROOT_PASSWORD=mypassword
+    volumes:
+        - /tmp:/var/run/mysqld
