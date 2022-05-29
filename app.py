@@ -23,7 +23,7 @@ def index():
     cur.execute(''' CREATE TABLE players(identifier varchar(255), name varchar(20) UNIQUE, amountofgold int(11)) ''')
     mysql.connection.commit()
     cur.close()
-    return 'Player Table create !'
+    return render_template('player_table_created.html')
 
 @app.route('/Createplayer', methods=['POST', 'GET'])
 def Createplayer():
@@ -40,7 +40,7 @@ def Createplayer():
         cur.execute("INSERT INTO players(identifier,name) VALUES(%s, %s)",(identifier,name))
         mysql.connection.commit()
         cur.close()
-        return 'Great ! You Have Successfully Registered The Player!!'
+        return render_template('player_created.html')
     return render_template('index.html')
 
 @app.route('/Getplayer')
