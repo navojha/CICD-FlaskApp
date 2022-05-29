@@ -40,7 +40,7 @@ def Createplayer():
         cur.execute("INSERT INTO players(identifier,name) VALUES(%s, %s)",(identifier,name))
         mysql.connection.commit()
         cur.close()
-        return 'Great ! You Have Successfully Registered The Player!'
+        return 'Great ! You Have Successfully Registered The Player!!'
     return render_template('index.html')
 
 @app.route('/Getplayer')
