@@ -227,4 +227,4 @@ This will create the player table.
     mydeployment_redis.1.jl75g73wsi39@docker-desktop    | 1:M 25 May 2022 12:50:32.803 * Running mode=standalone, port=6379.
     mydeployment_redis.1.jl75g73wsi39@docker-desktop    | 1:M 25 May 2022 12:50:32.803 # Server initialized
     mydeployment_redis.1.jl75g73wsi39@docker-desktop    | 1:M 25 May 2022 12:50:32.803 * Ready to accept connections
-    cc
+    c
