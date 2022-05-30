@@ -4,7 +4,12 @@ This repository contains flask Web application code. We can deploy The entire st
 
 
 ### Architecture
-![Architecture](https://github.com/navojha/dockerswarm-docker-compose-flask-mysql-redis/blob/main/Screenshots/Architecture_docker_Swarm.png?raw=true)
+![Architecture](https://github.com/navojha/CICD-FlaskApp/blob/master/Screenshots/production-ready_deployment.jpg?raw=true)
 
 
     
+
+
+
+### Pipeline
+![Architecture](https://github.com/navojha/CICD-FlaskApp/blob/master/Screenshots/production-ready_deployment.jpg?raw=true)
