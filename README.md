@@ -12,4 +12,4 @@ This repository contains flask Web application code. We can deploy The entire st
 
 
 ### Pipeline
-![Architecture](https://github.com/navojha/CICD-FlaskApp/blob/master/Screenshots/production-ready_deployment.jpg?raw=true)
+![Architecture](https://github.com/navojha/CICD-FlaskApp/blob/master/Screenshots/Pipeline.jpg?raw=true)
